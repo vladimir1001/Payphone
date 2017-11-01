@@ -56,10 +56,16 @@ namespace Course_OOP
         public void addNumberOfButton(string N)
         {
             if (!this.Visible)
-                return;           
+                return;
             number += N;
             textBoxNumber.Text = number;
             countNumber++;
+
+            if (countNumber == 3 && number.Equals("112"))
+            {
+                textAnswer.Invoke((MethodInvoker)(()=>{ textAnswer.Text = "Екстрений виклик!"; }));
+            }
+
             if (countNumber == 7)
             {
                 NumberIsEntered(this, new EventArgs());

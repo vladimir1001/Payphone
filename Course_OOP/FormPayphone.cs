@@ -342,13 +342,14 @@ namespace Course_OOP
             if (b.Name == "button_sharp" || b.Name == "button_asterisk")
                 return;
             
+            //button_1
+            //    button_1
+            //    button_2
+
             //Набор номера           
             fATS.addNumberOfButton(b.Text);
-            phoneNumber += b.Text; ;
+            phoneNumber += b.Text;
             textScreen.Text = phoneNumber;
-            
-            
-    
         }
 
         private WindowsMediaPlayer wmpTone; 
